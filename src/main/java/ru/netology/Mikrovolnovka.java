@@ -11,10 +11,11 @@ public class Mikrovolnovka {
 
     public void setPower(int power) {
         this.power = power;
+        return;
     }
 
-    public void setnextPower() {
-        if (power >= 0 && power < 9) {
+    public void setNextPower() {
+        if (power >= 0 && power < 8) {
             power = power + 1;
             return;
         }
@@ -24,5 +25,14 @@ public class Mikrovolnovka {
         return;
     }
 
-
+    public void setPrevPower() {
+        if (power > 0 && power <= 8) {
+            power = power - 1;
+            return;
+        }
+        else {
+            power = 8;
+        }
+        return;
+    }
 }
