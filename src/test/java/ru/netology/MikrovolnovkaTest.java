@@ -10,13 +10,13 @@ public class MikrovolnovkaTest {
 
     @Test
     public void setnextPower() {
-//
-//        mikrovolnovka.setPower(3);
-//        mikrovolnovka.setnextPower();
-//
-//        int expected = 4;
-//        int actual = mikrovolnovka.getPower();
-//
-//        assertEquals(expected, actual);
+
+        mikrovolnovka.setPower(3);
+        mikrovolnovka.setnextPower();
+
+        int expected = 4;
+        int actual = mikrovolnovka.getPower();
+
+        assertEquals(expected, actual);
     }
 }
